@@ -6,7 +6,19 @@ import com.jaunt.component.*;
 public class Example15{
   public static void main(String[] args){
     try{
-      UserAgent userAgent = new UserAgent(); 
+    	UserAgent userAgent = new UserAgent(); 
+        userAgent.visit("http://www.google.com");
+   
+        Form form = userAgent.doc.getForm(0);       //get the document's first Form
+        form.setTextField("q", "testee"); //or  form.set("email", "tom@mail.com");
+       
+        form.submit("Google Search");        //click the submit button labelled 'create trial account'
+        System.out.println(userAgent.getSource());
+        //System.out.println(userAgent.getLocation());//print the current location (url)
+        
+        
+/*
+ * UserAgent userAgent = new UserAgent(); 
       userAgent.visit("http://jaunt-api.com/examples/signup2.htm");
  
       Form form = userAgent.doc.getForm(0);       //get the document's first Form
@@ -18,6 +30,7 @@ public class Example15{
       form.setRadio("inform", "no");              //or  form.setRadio("inform", "no");
       form.submit("create trial account");        //click the submit button labelled 'create trial account'
       System.out.println(userAgent.getLocation());//print the current location (url)
+ */
     }
     catch(JauntException e){                   
       System.err.println(e);
