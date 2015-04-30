@@ -107,5 +107,8 @@
 	<classpathentry kind="lib" path="libs/xpp3_min-1.1.4c.jar"/>
 	<classpathentry kind="lib" path="libs/xstream-1.4.7.jar"/>
 	<classpathentry kind="lib" path="libs/jaunt0.9.9.8.jar"/>
+	<classpathentry kind="lib" path="libs/mysql-connector-java-5.1.9.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
