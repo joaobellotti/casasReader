@@ -3,17 +3,12 @@ package scrapping;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.util.List;
 
-import org.antlr.stringtemplate.language.Cat;
-
-import playground.ConnectionManager;
 import scrapping.model.Imovel;
 
 import com.jaunt.Document;
 import com.jaunt.Element;
 import com.jaunt.Elements;
-import com.jaunt.HttpRequest;
 import com.jaunt.ResponseException;
 import com.jaunt.SearchException;
 import com.jaunt.UserAgent;

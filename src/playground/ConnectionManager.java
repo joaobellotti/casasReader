@@ -80,12 +80,12 @@ public class ConnectionManager {
 
                 try
                 {
-                    com.ibm.as400.access.Trace.setTraceOn(false);
-                    com.ibm.as400.access.Trace.setTraceErrorOn(false);
-                    com.ibm.as400.access.Trace.setTraceInformationOn(false);
-                    com.ibm.as400.access.Trace.setTraceDatastreamOn(false);
-                    com.ibm.as400.access.Trace.setTraceDiagnosticOn(false);
-                    com.ibm.as400.access.Trace.setTraceWarningOn(false);
+//                    com.ibm.as400.access.Trace.setTraceOn(false);
+//                    com.ibm.as400.access.Trace.setTraceErrorOn(false);
+//                    com.ibm.as400.access.Trace.setTraceInformationOn(false);
+//                    com.ibm.as400.access.Trace.setTraceDatastreamOn(false);
+//                    com.ibm.as400.access.Trace.setTraceDiagnosticOn(false);
+//                    com.ibm.as400.access.Trace.setTraceWarningOn(false);
 
                     java.util.Properties props = new java.util.Properties();
 
