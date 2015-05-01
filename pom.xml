@@ -10,6 +10,8 @@
 	<name>Imov</name>
 	<url>http://maven.apache.org</url>
 
+
+
 	<repositories>
 		<repository>
 			<id>prime-repo</id>
@@ -160,5 +162,17 @@
 
 	</dependencies>
 	  
+	  
+	  <build>
+    	<plugins>
+	  	<plugin>            
+			  <groupId>org.apache.maven.plugins</groupId>
+			  <artifactId>maven-war-plugin</artifactId>
+			  <configuration>
+			    <webXml>WebContent\WEB-INF\web.xml</webXml>        
+			  </configuration>
+		</plugin>
+		</plugins>
+	</build>
 	
 </project>
